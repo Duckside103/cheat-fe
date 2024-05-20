@@ -7,7 +7,6 @@ const Detail = () => {
   const navigate = useNavigate();
   let { id } = useParams();
   const [_id, number] = id.split("ahihi");
-  console.log(">> Check | Detail | _id, number:", _id, number);
 
   const [value, setValue] = useState("");
   const [numberVal, setNumberVal] = useState(number);
