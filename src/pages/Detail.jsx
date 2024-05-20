@@ -23,7 +23,7 @@ const Detail = () => {
   };
 
   const handleSubmit = async () => {
-    await axios.post("http://localhost:3000/answer", {
+    await axios.post("https://smart-guy.vercel.app/answer", {
       number,
       answer: value,
     });

@@ -7,7 +7,9 @@ function useAll() {
 
   useEffect(() => {
     (async () => {
-      const { data } = await axios.get("http://localhost:3000/question/");
+      const { data } = await axios.get(
+        "https://smart-guy.vercel.app/question/"
+      );
       setData(data.result);
     })();
   }, []);
