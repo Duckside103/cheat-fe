@@ -36,14 +36,17 @@ const Detail = () => {
       style={{
         display: "flex",
         alignItems: "flex-start",
+        flexDirection: "column",
       }}
     >
-      <div dangerouslySetInnerHTML={{ __html: detail.html }} />
-      <input type="text" value={numberVal} onChange={handleChangeNumber} />
-      <input type="text" autoFocus value={value} onChange={handleChange} />
-      <button onClick={handleSubmit} disabled={!value}>
-        Submit
-      </button>
+      <div>
+        <input type="text" value={numberVal} onChange={handleChangeNumber} />
+        <input type="text" autoFocus value={value} onChange={handleChange} />
+        <button onClick={handleSubmit} disabled={!value}>
+          Submit
+        </button>
+      </div>
+      <img width={1400} src={detail.html} />
     </div>
   );
 };
