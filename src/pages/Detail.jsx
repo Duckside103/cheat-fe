@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-// import useDetail from "../hooks/useDetail";
+import useDetail from "../hooks/useDetail";
 import { useState } from "react";
 import axios from "axios";
 
@@ -7,13 +7,13 @@ const Detail = () => {
   const navigate = useNavigate();
   console.log(">> Check | navigate:", navigate);
   let { id } = useParams();
-  // eslint-disable-next-line no-unused-vars
   const [_id, number] = id.split("ahihi");
 
   const [value, setValue] = useState("");
   const [numberVal, setNumberVal] = useState(number);
 
-  // const detail = useDetail(_id);
+  // eslint-disable-next-line no-unused-vars
+  const detail = useDetail(_id);
 
   const handleChange = (e) => {
     setValue(e.target.value);
