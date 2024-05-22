@@ -12,7 +12,6 @@ const Detail = () => {
   const [value, setValue] = useState("");
   const [numberVal, setNumberVal] = useState(number);
 
-  // eslint-disable-next-line no-unused-vars
   const detail = useDetail(_id);
 
   const handleChange = (e) => {
@@ -47,7 +46,7 @@ const Detail = () => {
           Submit
         </button>
       </div>
-      {/* <img width={1400} src={detail.html} /> */}
+      <img width={1400} src={detail.html} />
     </div>
   );
 };
