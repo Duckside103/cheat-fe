@@ -7,7 +7,6 @@ const Detail = () => {
   const navigate = useNavigate();
   let { id } = useParams();
   const [_id, number] = id.split("ahihi");
-  console.log(">> Check | Detail | _id, number:", _id, number);
 
   const [value, setValue] = useState("");
   const [numberVal, setNumberVal] = useState(number);
@@ -23,7 +22,7 @@ const Detail = () => {
   };
 
   const handleSubmit = async () => {
-    await axios.post("http://localhost:3000/answer", {
+    await axios.post("https://smart-guy.vercel.app/answer", {
       number,
       answer: value,
     });

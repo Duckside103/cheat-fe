@@ -7,7 +7,9 @@ function useDetail(id) {
 
   useEffect(() => {
     (async () => {
-      const { data } = await axios.get(`http://localhost:3000/question/${id}`);
+      const { data } = await axios.get(
+        `https://smart-guy.vercel.app/question/${id}`
+      );
       setData(data.result);
     })();
   }, [id]);
