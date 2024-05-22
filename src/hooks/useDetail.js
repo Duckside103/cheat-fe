@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function useDetail(id) {
   const [data, setData] = useState({});
+  console.log(">> Check | data:", data);
 
   useEffect(() => {
     (async () => {
