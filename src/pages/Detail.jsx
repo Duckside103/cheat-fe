@@ -46,7 +46,7 @@ const Detail = () => {
           Submit
         </button>
       </div>
-      <img width={1400} src={detail.html} />
+      {detail.html && <img width={1400} src={detail.html} />}
     </div>
   );
 };
