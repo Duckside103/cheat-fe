@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<All />} />
           <Route path="/:id" element={<Detail />} />
+          <Route path="*" element={<p>Page not found</p>} />
         </Routes>
       </BrowserRouter>
     </>
